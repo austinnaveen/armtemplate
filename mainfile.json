@@ -1,0 +1,17 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "apiVersion": "2018-08-01",
+            "name": "vnet3Template",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+				"mode": "Incremental",
+				"templateLink": {
+					"uri":"https://raw.githubusercontent.com/austinnaveen/armtemplate/master/template.json",
+             }
+		  }
+	  }
+    ]
+}
