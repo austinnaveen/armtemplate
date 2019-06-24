@@ -8,6 +8,10 @@
         "addressPrefix": "100.0.0.0/16",
         "subnetName": "Subnet1",
         "subnetAddressPrefix": "100.0.1.0/24",
+		"subnet2Name": "Subnet2",
+        "subnet2AddressPrefix": "100.0.2.0/24",
+		"subnet3Name": "Subnet3",
+        "subnet3AddressPrefix": "100.0.3.0/24",
     },
     "resources": [
         {
@@ -26,6 +30,18 @@
                         "name": "[variables('subnetName')]",
                         "properties": {
                             "addressPrefix": "[variables('subnetAddressPrefix')]"
+                        }
+                    },
+					{
+                        "name": "[variables('subnet2Name')]",
+                        "properties": {
+                            "addressPrefix": "[variables('subnet2AddressPrefix')]"
+                        }
+                    },
+					{
+                        "name": "[variables('subnet3Name')]",
+                        "properties": {
+                            "addressPrefix": "[variables('subnet3AddressPrefix')]"
                         }
                     }
                 ],
